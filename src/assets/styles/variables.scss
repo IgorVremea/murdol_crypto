@@ -1,0 +1,21 @@
+$darkBlueBgColor: #0D0D2B;
+$lightBlue: #3671E9;
+$grayLoginLine: #F2F2F2;
+$colorTryFree: rgba(255, 255, 255, 0.1);
+$colorTryFreeBtn: #94C5FF;
+$colorTryFreeText: #0D0D2B;
+$gradientBgBitcoin: linear-gradient(180deg, #F9AA4B -0.02%, #F7931A 99.99%);
+
+@mixin fontInter($weight){
+  font-family: 'Inter', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin fontPoppins($weight) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $weight;
+}
+@mixin fontRubik($weight) {
+  font-family: 'Rubik', sans-serif;
+  font-weight: $weight;
+}

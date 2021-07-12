@@ -51,7 +51,10 @@
 <style lang="scss" scoped>
     @import '../assets/styles/variables.scss';
     .advantages {
+        background: url("../assets/images/advantagesLeftBottom.svg") no-repeat, url("../assets/images/advantagesD.svg") no-repeat, url("../assets/images/advantagesU.svg") no-repeat;
+        background-position: left 100%, right 30%, right 90%;
         background-color: $darkBlueBgColor;
+
         .numbers{
             display: flex;
             justify-content: space-between;
@@ -85,9 +88,36 @@
             }
         }
         .mainSection{
+            box-sizing: border-box;
             padding: 117px 0 0 120px;
-            .img{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .left{
                 width: 394px;
+            }
+            .right{
+                width: 480px;
+                color: white;
+                padding-top: 60px;
+                @include fontPoppins(400);
+                h2{
+                    font-size: 40px;
+                }
+                .subH1{
+                    margin-top: 23px;
+                }
+                .learnMore{
+                    display:inline-block;
+                    margin-top: 48px;
+                    padding: 16px 24px;
+                    color: white;
+                    text-decoration: none;
+                    @include fontPoppins(600);
+                    background-color: $lightBlue;
+                    border-radius: 100px;
+                }
+
             }
         }
 
